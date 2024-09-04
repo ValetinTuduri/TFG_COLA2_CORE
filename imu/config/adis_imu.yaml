@@ -1,0 +1,21 @@
+# params.yaml
+
+adis_imu:
+  ros__parameters:
+    # Maximum and minimum pressure for the pressure sensor. Read the datasheet
+    max_pressure: 100.0
+    min_pressure: 0.0
+
+    # This parameter sets the internal decimation rate of the ADIS (19 -> 123 Hz)
+    dec_rate: 19
+
+    # ADIS IMU serial port
+    serial_port:
+      path: "/dev/ttyS10"
+      baud_rate: 57600
+      char_size: 8
+      stop_bits: 1
+      parity: "NONE"
+      flow_control: "NONE"
+      timeout: 1000
+

@@ -1,0 +1,11 @@
+<launch>
+    <!-- adis_imu -->
+    <rosparam ns="adis_imu" command="load" file="$(find adis_imu)/config/adis_imu.yaml"/>
+    <node name="adis_imu" pkg="adis_imu" type="adis_imu_node" respawn="true" output="screen"/>
+    <!-- imu_angle_estimator -->
+    <rosparam ns="imu_angle_estimator" command="load" file="$(find adis_imu)/config/imu_angle_estimator.yaml"/>
+    <rosparam ns="imu_angle_estimator" command="load" file="$(find adis_imu)/calibrations/adis_imu_last_calibration.yaml"/>
+    <node name="imu_angle_estimator" pkg="adis_imu" type="imu_angle_estimator_node.py" respawn="true" output="screen"/>
+    <!-- imu_calibration_node -->
+    <node name="imu_calibration" pkg="adis_imu" type="imu_calibration_node.py" respawn="true" output="screen"/>
+</launch>

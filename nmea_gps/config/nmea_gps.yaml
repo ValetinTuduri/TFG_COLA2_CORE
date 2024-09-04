@@ -1,0 +1,12 @@
+# GPS serial port
+serial_port/path: "/dev/ttyS9"
+serial_port/baud_rate: 9600
+serial_port/char_size: 8
+serial_port/stop_bits: 1
+serial_port/parity: "NONE"
+serial_port/flow_control: "NONE"
+serial_port/timeout: 10000
+
+# Frame ID
+frame_id: "gps"
+

@@ -1,0 +1,16 @@
+std_msgs/Header header
+string raw
+float64 mx
+float64 my
+float64 mz
+float64 gx
+float64 gy
+float64 gz
+float64 ax
+float64 ay
+float64 az
+float64 t
+float64 b
+string f
+float64 e
+float64 w

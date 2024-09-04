@@ -1,0 +1,21 @@
+# Files
+.project
+.pydevproject
+*~
+*.pyc
+*.gch
+*.o
+*.user
+CATKIN_IGNORE
+
+# Folders
+bin/
+build/
+msg_gen/
+srv_gen/
+build-*/
+.idea/*
+cmake-build-debug/*
+
+# Subfolders in src
+src/*/

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>stm32</name>
+  <version>0.0.0</version>
+  <description>TODO: Package description</description>
+  <maintainer email="ros2@todo.todo">ros2</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- ROS Dependencies -->
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+
+  
+
+  <!-- COLA2 Dependencies -->
+  <depend>cola2_lib</depend>
+  <depend>cola2_msgs</depend>
+  <depend>cola2_lib_ros</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <member_of_group>rosidl_interface_packages</member_of_group>
+  
+  
+  <!-- Specify message generation -->
+  <export>
+    <build_type>ament_cmake</build_type>
+    <rosidl_default_runtime export="true"/>
+  </export>
+</package>

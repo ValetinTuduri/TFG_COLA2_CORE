@@ -1,0 +1,5 @@
+<launch>
+  <!-- nmea_gps -->
+  <rosparam ns="nmea_gps" command="load" file="$(find nmea_gps)/config/nmea_gps.yaml"/>
+  <node name="nmea_gps" pkg="nmea_gps" type="nmea_gps_node" output="screen"/>
+</launch>

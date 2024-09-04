@@ -1,0 +1,16 @@
+std_msgs/Header header
+string time_utc
+float64 latitude
+float64 longitude
+int32 fix_quality
+int32 number_of_satellites
+float32 hdop
+float32 altitude
+float32 geoidal_separation
+float32 heading
+float32 latitude_stdev
+float32 longitude_stdev
+float32 altitude_stdev
+string raw_gpgga
+string raw_gphdt
+string raw_gpgst

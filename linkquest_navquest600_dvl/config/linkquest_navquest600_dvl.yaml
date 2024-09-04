@@ -1,0 +1,12 @@
+# params.yaml
+
+linkquest_navquest600_dvl:
+ ros__parameters:
+  frame_id: "dvl"
+  velocity_of_sound: 0
+  salinity: 35
+  flip_up_down: true
+  output_period: 1.0
+  sp_path: "/dev/ttyUSB0"
+  sp_baud_rate: 9600
+

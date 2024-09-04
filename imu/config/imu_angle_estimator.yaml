@@ -1,0 +1,17 @@
+# params.yaml
+
+adis_imu:
+  ros__parameters:
+    # From 0.0 (only tilt angles) to 1.0 (only gyro).
+    # Recommended settings: Pool -> 0.95    Sea -> 0.995 to 0.998
+    merging_filter_coefficient: 0.995
+
+    # Max size of the averaging filter that estimates the gyro biases. Must be an
+    # integer greater than zero
+    max_gyro_bias_buffer_size: 18000
+
+    # The output data is represented with respect to the "imu_filter" frame but
+    # orientated in the vehicle frame. This "trick" is necessary for calibration
+    # purposes (since the calibration is performed in 2D)
+    frame_id: "imu_filter"
+

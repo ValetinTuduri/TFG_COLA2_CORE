@@ -1,0 +1,11 @@
+# Files
+.project
+.pydevproject
+*~
+*.pyc
+
+# Folders
+bin/
+build/
+msg_gen/
+srv_gen/

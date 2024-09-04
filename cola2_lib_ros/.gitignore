@@ -1,0 +1,23 @@
+# Files
+.project
+.pydevproject
+*~
+*.pyc
+*.tag
+*.user
+
+# Folders
+_build/
+bin/
+build/
+doc/python/
+doc/html/cpp
+doc/html/python
+env/
+msg_gen/
+srv_gen/
+missions/
+.idea/
+cmake-build-debug/
+
+.vscode/
